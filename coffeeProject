@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 😉 Coffee Lover's</title>
+</head>
+
+<style>
+
+body {
+
+    background:radial-gradient(circle at 10% 20%, rgb(255, 246, 236) 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
+
+}
+    h1{
+        font-size: 40px;
+        color: brown;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    h2{
+        text-align: center;
+        color: rgb(114, 27, 27);
+        font-weight: 400;
+        font-size: 30px; 
+        padding: 10px;
+
+    }
+
+    img{
+        display: block;
+        margin:0 auto;
+        max-width: 50%;
+        border-radius: 5px;}
+
+    p {
+
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 15px;
+
+    }
+
+    button {
+
+        display: block;
+        margin: 10px auto;
+        background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%); ;
+        color:rgb(138, 78, 35);
+        font-size: 20px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 8px;
+        transition: all 300ms ease-in;
+        box-shadow: 3px 3px 5px rosybrown;
+        
+    }
+    button:hover {
+        cursor:grabbing;
+
+    }
+
+.primary{
+    max-width: 80%;
+    margin:o auto;
+    padding: 10px 40px;
+}
+.main{
+    color: rgb(224, 38, 38);
+    font-size: 18px;
+
+
+}  
+  .main:hover {
+      text-decoration: underline;
+  }
+
+  .second{
+      color:darkslateblue;
+      text-align: center;
+      font-size: 20px;
+      display: block;
+  }
+</style>
+
+<body>
+    
+    <div class= "primay">
+ <h1> <strong> The Colombian Coffee </strong></h1>
+
+ <h2> <em> " The good smell and taste in just one cup" </em></h2><hr>
+
+ <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/567/original/171026-better-coffee-boost-se-329p.jpg?1640533182"
+ alt=" Colombian Coffee"
+</img>
+<p><span class="main">
+    Colombia’s coffee </span> is world famous for its flavor and the unmistakeable mild but rich aroma that rises from every brew.
+    That may explain why we’ve been exporting our coffee for almost 200 years and, for most of that time, it’s been our top export. 
+    There are many secrets to our success but our geography is undeniably one of them. 
+    Coffee grows best in volcanic soil, at altitudes of 1,200 to 1,800 meters, in places that are free of frost but receive around 80 inches of rain a year.
+    Colombia ticks all those boxes.
+    
+</p>
+
+<a href="https://www.colombia.co/en/trade-with-colombia/exports/colombian-coffee-worlds-favorite/"
+target="_blank"
+class="learn-more"
+> 
+Learn more at Colombia.co
+<br>
+<br>
+</a>
+<button>
+    ☕ Try Colombian Coffee ☕
+    </button>
+<p>
+    <span class= "second"> This page was created by Yenny Copeland </span>
+
+</p>
+
+    </div>
+
+<script>
+
+function buy(){
+let name = prompt("What's your name?").toUpperCase();
+let email = prompt("what's your email address?");
+let drink = prompt("What's your favorite drink?").toLocaleLowerCase().trim();
+
+if(drink=== "coffee"){
+alert("Good choice 😁."+" " + "Thank you!"+" "+ name );}
+else { 
+    alert("Now is time, try Colombian Coffee ☕"+" "+ name+ "."+ " " + "We'll be contact you by email!");
+
+}
+
+}
+
+let buyButton = document.querySelector("button");
+buyButton.addEventListener("click", buy);
+
+</script>
+</body>
+</html>
